@@ -4,15 +4,13 @@ int main() {
     char operator;
     double num1, num2, r;
 
-    // Taking user input
     printf("Enter first number: ");
     scanf("%lf", &num1);
     printf("Enter second number: ");
     scanf("%lf", &num2);
     printf("Enter an operator (+, -, *, /): ");
-    scanf(" %c", &operator);  // Fixed: Added space before %c
+    scanf(" %c", &operator); 
 
-    // Performing calculations
     if (operator == '+') {
         r = num1 + num2;
         printf("Result: %lf\n", r);
@@ -33,5 +31,5 @@ int main() {
         printf("Invalid operator!\n");
     }
 
-    return 0;  // Fixed: Proper return for main()
+    return 0; 
 }
